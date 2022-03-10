@@ -6,11 +6,40 @@ import Head from 'next/head'
 import {BsInstagram} from 'react-icons/bs';
 import {AiOutlineMail} from 'react-icons/ai';
 import {BsWhatsapp} from 'react-icons/bs';
+import Script from 'next/script';
 
 
 function MyApp({ Component, pageProps,router }) {
 
-  return <AnimatePresence>
+  return( <>
+  
+  
+  <Script
+  strategy='lazyOnLoad'
+  src={'https://www.googletagmanager.com/gtag/js?id=G-YVJ8NWR3WW'}
+
+   />
+
+
+
+
+<Script strategy="lazyOnload">
+                {`
+                   window.dataLayer = window.dataLayer || [];
+                   function gtag(){dataLayer.push(arguments);}
+                   gtag('js', new Date());
+                 
+                   gtag('config', 'G-YVJ8NWR3WW');
+                `}
+            </Script>
+  
+  
+  
+  
+  
+  
+  
+  <AnimatePresence>
 
 <Head>
         <title>Moon Designs</title>
@@ -119,8 +148,8 @@ to our projects..." />
 </div>
   </AnimatePresence>
 
-
-  
+  </>
+  )
 }
-
+  
 export default MyApp
