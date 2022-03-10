@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps,router }) {
                    function gtag(){dataLayer.push(arguments);}
                    gtag('js', new Date());
                  
-                   gtag('config', 'G-YVJ8NWR3WW');
+                   gtag('config', 'G-BCPHN8QQWC');
                 `}
             </Script>
   
