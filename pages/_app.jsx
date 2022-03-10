@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps,router }) {
   
   <Script
   strategy='lazyOnLoad'
-  src={'https://www.googletagmanager.com/gtag/js?id=G-YVJ8NWR3WW'}
+  src={'https://www.googletagmanager.com/gtag/js?id=G-BCPHN8QQWC'}
 
    />
 
