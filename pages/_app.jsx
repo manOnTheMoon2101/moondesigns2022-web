@@ -18,17 +18,17 @@ function MyApp({ Component, pageProps,router }) {
   <Script
 
   strategy='lazyOnLoad'
-  src={'https://www.googletagmanager.com/gtag/js?id=G-G07MKDQDSD'}
+  src='https://www.googletagmanager.com/gtag/js?id=G-8PX1TPT1WX'
 
 />
 
-<Script strategy='lazyOnload'>
+<Script id='ga-analytics' strategy='lazyOnload'>
                 {`
                    window.dataLayer = window.dataLayer || [];
                    function gtag(){dataLayer.push(arguments);}
                    gtag('js', new Date());
                  
-                   gtag('config', 'G-G07MKDQDSD');
+                   gtag('config', 'G-8PX1TPT1WX');
                 `}
             </Script>
             
