@@ -11,42 +11,14 @@ import { useEffect } from 'react/cjs/react.development';
 
 import Script from 'next/script'
 
-import * as gtag from '../lib/gtag';
 
-function MyApp({ Component, pageProps }) {
 
-  const router = useRouter();
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      gtag.pageview(url);
-    };
-    router.events.on("routeChangeComplete", handleRouteChange);
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
+function MyApp({ Component, pageProps,router }) {
+
   return( <>
   
   
- {/* Global Site Tag (gtag.js) - Google Analytics */}
- <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-BCPHN8QQWC`}
-      />
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-BCPHN8QQWC', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
-  
+
   
   
   
