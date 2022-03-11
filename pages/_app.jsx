@@ -6,10 +6,8 @@ import Head from 'next/head'
 import {BsInstagram} from 'react-icons/bs';
 import {AiOutlineMail} from 'react-icons/ai';
 import {BsWhatsapp} from 'react-icons/bs';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react/cjs/react.development';
+import Script from 'next/script';
 
-import Script from 'next/script'
 
 
 
@@ -17,8 +15,23 @@ function MyApp({ Component, pageProps,router }) {
 
   return( <>
   
-  
+  <Script
 
+  strategy='lazyOnLoad'
+  src={'https://www.googletagmanager.com/gtag/js?id=G-G07MKDQDSD'}
+
+/>
+
+<Script strategy='lazyOnload'>
+                {`
+                   window.dataLayer = window.dataLayer || [];
+                   function gtag(){dataLayer.push(arguments);}
+                   gtag('js', new Date());
+                 
+                   gtag('config', 'G-G07MKDQDSD');
+                `}
+            </Script>
+            
   
   
   
