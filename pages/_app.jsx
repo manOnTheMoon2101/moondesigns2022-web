@@ -6,34 +6,46 @@ import Head from 'next/head'
 import {BsInstagram} from 'react-icons/bs';
 import {AiOutlineMail} from 'react-icons/ai';
 import {BsWhatsapp} from 'react-icons/bs';
-import Script from 'next/script';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react/cjs/react.development';
 
+import Script from 'next/script'
 
-function MyApp({ Component, pageProps,router }) {
+import * as gtag from './lib/gtag';
 
+function MyApp({ Component, pageProps }) {
+
+  const router = useRouter();
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
   return( <>
   
   
-  <Script
-  strategy='lazyOnLoad'
-  src={'https://www.googletagmanager.com/gtag/js?id=G-YVJ8NWR3WW'}
-
-   />
-
-
-
-
-<Script strategy="lazyOnload">
-                {`
-                   window.dataLayer = window.dataLayer || [];
-                   function gtag(){dataLayer.push(arguments);}
-                   gtag('js', new Date());
-                 
-                   gtag('config', 'G-YVJ8NWR3WW');
-                `}
-            </Script>
-  
-  
+ {/* Global Site Tag (gtag.js) - Google Analytics */}
+ <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-BCPHN8QQWC`}
+      />
+      <Script
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BCPHN8QQWC', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
   
   
   
