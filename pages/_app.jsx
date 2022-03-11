@@ -13,6 +13,7 @@ import Script from 'next/script'
 
 import * as gtag from './lib/gtag';
 
+<<<<<<< HEAD
 function MyApp({ Component, pageProps }) {
 
   const router = useRouter();
@@ -26,6 +27,28 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
   return( <>
+=======
+  return( <>
+  
+  
+  <Script
+  strategy='lazyOnLoad'
+  src={'https://www.googletagmanager.com/gtag/js?id=G-BCPHN8QQWC'}
+
+   />
+
+
+
+
+<Script strategy='lazyOnload'>
+                {`
+             window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BCPHN8QQWC');
+            </Script>
+>>>>>>> 949b33a44cfdb67bcd1f87a46cfcac730cf22b14
   
   
  {/* Global Site Tag (gtag.js) - Google Analytics */}
