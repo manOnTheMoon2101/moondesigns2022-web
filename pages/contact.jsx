@@ -10,6 +10,10 @@ import logo5 from '../public/images/full_moon (1).svg'
 
 import { motion } from 'framer-motion';
 import {BsArrowDown} from 'react-icons/bs';
+
+
+
+
 export default function Contact(){
 
     return <>
@@ -19,11 +23,25 @@ export default function Contact(){
 
 <div className={styles.contactHeader}>
 
+<motion.div
+     
+     
 
+
+     initial={{opacity:0, x:'100vw'}}
+     animate={{opacity:1, x:0,transition:{delay:.1}}}
+     
+     exit={{opacity:0, x:'-100vw'}}
+
+     
+     
+     
+     
+     >
 
 <h1 className={styles.serviceHeader}>Contact</h1>
 
-
+</motion.div>
 
     <div className={styles.moon}>
      <Image className={styles.moonH} src={logo5} width='100px' height='100px'></Image>

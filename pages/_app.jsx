@@ -5,34 +5,56 @@ import Link from 'next/link';
 import Head from 'next/head'
 import {BsInstagram} from 'react-icons/bs';
 import {AiOutlineMail} from 'react-icons/ai';
+import {BsFacebook} from 'react-icons/bs';
 import {BsWhatsapp} from 'react-icons/bs';
-import Script from 'next/script';
+
+import { useRouter } from 'next/router'
+import { GTM_ID, pageview } from '../lib/ga/gtm'
+import { useEffect } from 'react'
+import Script from 'next/script'
 
 
 
+function MyApp({ Component, pageProps }) {
+  const router = useRouter()
+  useEffect(() => {
+    router.events.on('routeChangeComplete', pageview)
+    return () => {
+      router.events.off('routeChangeComplete', pageview)
+    }
+  }, [router.events])
 
-function MyApp({ Component, pageProps,router }) {
 
   return( <>
   
   <Script
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer', 'GTM-KH4ZFBC');
+          `,
+        }}
+      />
+     
+   
 
-  strategy='lazyOnLoad'
-  src='https://www.googletagmanager.com/gtag/js?id=G-8PX1TPT1WX'
+     <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-8PX1TPT1WX`} />
 
-/>
+<Script strategy="lazyOnload">
+    {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-8PX1TPT1WX', {
+        page_path: window.location.pathname,
+        });
+    `}
+</Script>
 
-<Script id='ga-analytics' strategy='lazyOnload'>
-                {`
-                   window.dataLayer = window.dataLayer || [];
-                   function gtag(){dataLayer.push(arguments);}
-                   gtag('js', new Date());
-                 
-                   gtag('config', 'G-8PX1TPT1WX');
-                `}
-            </Script>
-            
-  
   
   
   
@@ -40,9 +62,11 @@ function MyApp({ Component, pageProps,router }) {
 
 <Head>
         <title>Moon Designs</title>
-        <meta name="description" content="we provided our clients with high end quality work
-and we always put heart and soul
-to our projects..." />
+        <meta name="description" content="Web Designs based in Wellington,NextJS,Responsive Webdesign,South Africa,Remote" />
+
+<meta name='robots' content='noindex,nofollow'></meta>
+
+
         <link rel="icon" href="/moon_icon.ico" />
 
 
@@ -58,6 +82,12 @@ to our projects..." />
 <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet"></link>
 
 
+
+
+
+
+          
+
       </Head>
 
   
@@ -68,8 +98,9 @@ to our projects..." />
      <li><Link href='/'>Home</Link></li>
        <li><Link href='/about'>About</Link></li>
        <li><Link href='/service'>Service</Link></li>
-       <li><Link href='/contact'>Contact</Link></li>
        
+       <li><Link href='/contact'>Contact</Link></li>
+      
      </ul>
      </div>
     
@@ -130,6 +161,7 @@ to our projects..." />
   <a id={styles.instaL} href="https://www.instagram.com/moon_designs2022/" target="_blank" rel="noopener noreferrer"><BsInstagram/></a>
   <a id={styles.whatsL}href='https://api.whatsapp.com/send?phone=27746957353&text=Hey,I%20would%20like%20to%20place%20a%20order?' target="_blank" rel="noopener noreferrer"><BsWhatsapp/></a>
   <a id={styles.gmailL} href='mailto:moondesigns2022@gmail.com' target="_blank" rel="noopener noreferrer"><AiOutlineMail/></a>
+  <a id={styles.faceL} href='https://www.facebook.com/moonDesigns2022' target="_blank" rel="noopener noreferrer"><BsFacebook/></a>
 </div>
 
 

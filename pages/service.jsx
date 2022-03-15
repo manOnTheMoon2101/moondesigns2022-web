@@ -1,14 +1,20 @@
-import Head from 'next/head'
+
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
-import {AiOutlineSmile} from 'react-icons/ai';
 import {RiPagesLine} from 'react-icons/ri';
 import logo5 from '../public/images/full_moon (1).svg'
 import { useState } from 'react'
 import { motion } from 'framer-motion';
 
+
+
+import {MdBusiness} from 'react-icons/md';
+import {MdPerson} from 'react-icons/md'
+import {MdUpdate} from 'react-icons/md';
+import {AiOutlineStop} from 'react-icons/ai';
+import {BiCart} from 'react-icons/bi';
 
 
 
@@ -33,6 +39,32 @@ export default function Service(){
   const domainClickP =() =>{
   setNum(+300);
 }
+
+function cartDomain(){
+  const optionD = document.getElementsByClassName(styles.optionD).value
+  
+  if (optionD === ".vercel.app(default)"){
+    setNum(+10);}
+
+  else{
+    setNum(+300)
+  
+  }
+}
+
+
+function cartAnimation(el){
+  const optionA = el.value
+
+  if (optionA === "No Animations"){
+    setNumA(+10);}
+
+  else{
+    setNumA(+200)
+  
+  }
+}
+
 
 const domainClickM =() =>{
   setNum(0);
@@ -101,11 +133,25 @@ const portClickM =() =>{
 
 
       <div className={styles.aboutP}>
+      <motion.div
+     
+     
 
+
+     initial={{opacity:0, x:'-100vw'}}
+     animate={{opacity:1, x:0,transition:{delay:.1}}}
+     
+     exit={{opacity:0, x:'100vw'}}
+
+     
+     
+     
+     
+     >
       
         <h1 className={styles.serviceHeader}>Services</h1>
 
-
+        </motion.div>
 
         
         <div className={styles.moon}>
@@ -120,47 +166,70 @@ const portClickM =() =>{
 
     <div className={styles.domainService}>
       <h1>Do you want your own Domain?</h1>
+     
+      <div className={styles.domainList}>
       
-        <h6>example. yourname+surname<span className={styles.com}>.com</span></h6>
-        <h6> businessname<span className={styles.za}>.co.za</span></h6>
-        <h6> anyname<span className={styles.io}>.net</span></h6>
-       
-
-  
-      <h2 className={styles.numVar}>+R{num}</h2>
-
-    <button className={styles.buttonD} onClick={domainClickM}>
+      <button className={styles.buttonD} onClick={domainClickM}>
   <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
-  <span class={styles.front}>No</span>
+  <span class={styles.front}>.vercel.app(default)</span>
       
       
       </button>
+
+<br/>
+<div className={styles.domainList2}>
     <button className={styles.buttonD} onClick={domainClickP}>
 
     <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
-  <span class={styles.front}>Yes</span>
+  <span class={styles.front2}>.com</span>
+
 
 
     </button>
+
+
+    <button className={styles.buttonD} onClick={domainClickP}>
+
+    <span class={styles.shadow}></span>
+  <span class={styles.edge}></span>
+  <span class={styles.front3}>.co.za</span>
+
+
+
+    </button>
+
+
+
+
+    <button className={styles.buttonD} onClick={domainClickP}>
+
+    <span class={styles.shadow}></span>
+  <span class={styles.edge}></span>
+  <span class={styles.front4}>.app</span>
+
+
+
+    </button>
+        </div>
+        </div>
+      <h2 className={styles.numVar}>+ZAR {num}</h2>
+
+      <div className={styles.cartC}>
+  
+  </div>
     
   </div>
   
+ 
 
   <div className={styles.animationsService}>
       <h1>Do you want any Animations?</h1>
-      <motion.div
-      className={styles.aniHover}
-      initial={{scale:1}}
-      whileTap={{ fontSize:'40px' ,rotate:360,color:'blue',textDecoration:'underline'}}
-      transition={{transition:1}
-    
-    }
-      >
-        <h2>Click and Hold on Me</h2>
-      </motion.div>
-      <h5 className={styles.numVar} >+R{numA}</h5>
+      
+        
+      
+      <h5 className={styles.numVar} >+ZAR {numA}</h5>
       
 
     <button className={styles.buttonD} onClick={AniClickM}>
@@ -171,14 +240,27 @@ const portClickM =() =>{
 
 
     </button>
+   
     <button className={styles.buttonD} onClick={AniClickP}>
-
+    <motion.div
+      className={styles.aniHover}
+      initial={{scale:1}}
+      whileTap={{ fontSize:'40px' ,rotate:360,color:'blue',textDecoration:'underline'}}
+      transition={{transition:1}
+    
+    }
+      >
     <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
-  <span class={styles.front}>Mid Animations</span>
-
-
+  
+  <span class={styles.front31}>Animations</span>
+ 
+  </motion.div>
     </button>
+
+    <div className={styles.cartC}>
+
+  </div>
   </div>
 
 
@@ -187,20 +269,19 @@ const portClickM =() =>{
       <h1>Do You Want Styling?</h1>
       
       
-      <h6 className={styles.noStyle}>Hey My Name is Juan,I have some styling today.</h6>
+      <h6 className={styles.noStyle}>qué tengas un lindo día</h6>
      
 
 
 
-      <h6 className={styles.allStyle}>Hey I'm Juan,I have <span className={styles.south}>average</span> styling in me today.</h6>
+      <h6 className={styles.allStyle}>qué tengas un lindo día</h6>
      
 
       <h5 className={styles.numVar}>+R{numS}</h5>
       
-    <button className={styles.buttonD} onClick={StyleClickP}>
-    <span class={styles.shadow}></span>
-  <span class={styles.edge}></span>
-  <span class={styles.front}>Low Styling</span>
+    <button  onClick={StyleClickP}>
+  
+  <span >Low Styling</span>
 
 
 
@@ -208,44 +289,51 @@ const portClickM =() =>{
     <button className={styles.buttonD} onClick={StyleClickM}>
     <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
-  <span class={styles.front}>Mid Styling</span>
+  <span class={styles.front2}>Mid Styling</span>
 
 
     </button>
+    <div className={styles.cartC}>
+
+  </div>
   </div>
 
   <div className={styles.pageService}>
       <h1>Page Count</h1>
 
-      <div className={styles.five}>
-      <RiPagesLine/>
-      <RiPagesLine/>
-      <RiPagesLine/>
-      <RiPagesLine/>
-      <RiPagesLine/>
-      </div>
+     
 
-      <div className={styles.ten}>
-
-     <p><RiPagesLine/><span className={styles.pageFive}>+5</span></p>
-     </div>
-
+     
 
       <h5 className={styles.numVar}>+R{numP}</h5>
       
     <button className={styles.buttonD} onClick={pageClickP}>
     <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
-  <span class={styles.front}>1-5 Pages</span>
+  <span class={styles.front}> 
+      <RiPagesLine/>
+      <br/>
+     (1-5)
+  </span>
 
     </button>
     <button className={styles.buttonD} onClick={pageClickM}>
     <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
-  <span class={styles.front}>6-10 Pages</span>
+  <span class={styles.front4}>
+    <RiPagesLine/>
+
+    
+      <br/>
+     (6-10)
+  
+  </span>
 
 
     </button>
+    <div className={styles.cartC}>
+
+  </div>
   </div>
 
 
@@ -259,21 +347,24 @@ const portClickM =() =>{
 
     <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
-  <span class={styles.front}>No</span>
+  <span class={styles.front}><AiOutlineStop/></span>
 
     </button>
     <button className={styles.buttonD} onClick={lifeClickP}>
     <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
-  <span class={styles.front}>Yes</span>
+  <span class={styles.front2}><MdUpdate/></span>
 
     </button>
+    <div className={styles.cartC}>
+
+  </div>
   </div>
 
 
   <div className={styles.portService}>
       <h1>Portfolio/Business</h1>
-      <h2>Attract Empolyeers <br/>or <br/>
+      <h2>Attract Empolyers <br/>or <br/>
       Attract Customers</h2>
       
       <h5 className={styles.numVar}>+R{numB}</h5>
@@ -282,7 +373,7 @@ const portClickM =() =>{
 
     <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
-  <span class={styles.front}>Portfolio</span>
+  <span class={styles.front}><MdPerson/></span>
 
 
     </button>
@@ -290,9 +381,12 @@ const portClickM =() =>{
 
     <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
-  <span class={styles.front}>Business</span>
+  <span class={styles.front3}><MdBusiness/></span>
 
     </button>
+    <div className={styles.cartC}>
+
+  </div>
   </div>
 
   
@@ -304,7 +398,7 @@ const portClickM =() =>{
 
     <div className={styles.coupon}>
     
-
+<p>For any question,please do contact us on our socials our send us a direct meesage through our web page.We will reach out to you in the next 24hrs.</p>
     </div>
 
     
@@ -315,6 +409,113 @@ const portClickM =() =>{
   </button>
 
   </div>
+
+
+
+
+
+  <div className={styles.cartContainer}>
+<form  action="https://formsubmit.co/moondesigns2022@gmail.com" method="POST">
+  <div className={styles.cart}>
+    <h1> Your Cart<BiCart/></h1>
+
+
+    <label>DomainName:</label>
+<select name='DomainName' >
+  <option value='.vercel.app' id={styles.optionD}>.vercel.app(default)</option>
+  
+  <option value='.com'>.com</option>
+  <option value='.co.za'>.co.za</option>
+  <option value='.app'>.app</option>
+
+  
+  </select>
+
+<br/>
+
+  <label>Animations:</label>
+<select name='Animations'>
+  <option value='NoAnimations'>No Animations</option>
+  <option value='YesAnimations'>Anamations Indeed</option>
+  
+  
+  
+  </select>
+
+<br/>
+
+  <label>Styling:</label>
+<select name='Styling'>
+  <option value='NoStyling'>No Styling</option>
+  <option value='YesStyling'>Styling Indeed</option>
+  
+  
+  
+  </select>
+    
+    <br/>
+   
+    <label>Pages:</label>
+<select name='Pages'>
+  <option value='1-5'>1-5</option>
+  <option value='6-10'>6-10</option>
+  
+  
+  
+  </select>
+    <br/>
+    
+    <label>Updates:</label>
+<select name='Updates'>
+  <option value='NoUpadtes'>No Updates</option>
+  <option value='YesUpadtes'>Updates Indeed</option>
+  
+  
+  
+  </select>
+    <br/>
+
+    <label>Portfolio?Business:</label>
+<select name='P/B'>
+  <option value='Portfolio'>Portfolio</option>
+  <option value='Business'>Business</option>
+  
+  
+  
+  </select>
+    <br/>
+
+    <p className={styles.warN}>Note:Please asure that everything in your cart is right and you entered your correct email address. 
+    <br/>
+    We will contact you back regarding payments and more inforamtion about your web page.
+    
+     </p>
+
+
+    <input class={styles['app-form-control']} type="text" name='Name' placeholder="Full Name(required)" required/>
+    <input class={styles['app-form-control']} type="text" name='Email' placeholder="Email(required)" required/>
+  
+
+    <button className={styles.buttonD2} type='submit'>
+
+  <span class={styles.shadow}></span>
+  <span class={styles.edge}></span>
+  <span class={styles.front}>Submit</span>
+
+  </button>
+    
+
+    </div>
+  
+  
+    </form>
+    </div>
+
+
+
+
+
+
     
 
       </>

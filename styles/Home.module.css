@@ -191,6 +191,13 @@ text-decoration: underline;
           
           }
           
+          .cartContainer{
+            width: 820px;
+            height: 600px;
+            border-bottom: 2px solid black;
+            
+             
+            }
 
          
   
@@ -369,6 +376,7 @@ text-decoration: underline;
             border-bottom: #000000 2px solid;
             height: 250px;
             width: 17cm;
+        
           }
 
           .form{
@@ -379,8 +387,13 @@ text-decoration: underline;
           
           }
           
-
-         
+          .cartContainer{
+  width: 17cm;
+            height: 600px;
+            border-bottom: 2px solid black;
+            
+             
+            }
   
   .footerMain{
     height: 200px;
@@ -501,6 +514,8 @@ right: 2cm;
 .serviceCenter{
 
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
  
 }
 
@@ -693,24 +708,8 @@ right: 2cm;
 
 
 
-.south{
-  animation: color-change 7s infinite;
-  
-  
 
 
-
-
-}
-
-@keyframes color-change {
-  0% { color: #000000; }
-  25% { color: #2a7007; }
-  50% { color: #eaff28; }
-  75% { color: #FF2626; }
-  100% { color: #001aff; }
-
-}
 
 .repR{
   font-size: 20px;
@@ -820,7 +819,7 @@ right: 2cm;
 border-bottom: #000000 2px solid;
 text-align: center;
 
-height: 650px;
+height: 400px;
 }
 
 
@@ -1003,7 +1002,18 @@ height: 650px;
       color: #ff1dbb;
       font-family: 'Gloria Hallelujah', cursive;
     }
+    .domainList{
+      display: inline-block;
+      
+    }
 
+    .domainList2{
+     padding-top: 1cm;
+    
+      display: inline-block;
+     
+      
+    }
 .priCe{
   border-bottom: #000000 2px solid;
   height: 300px;
@@ -1020,6 +1030,12 @@ height: 650px;
 
 .coupon{
   text-align: left;
+  width: 300px;
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Bitter', serif;
 }
 
 .coupon h1{
@@ -1051,6 +1067,29 @@ height: 50px;
           user-select: none;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
+      
+ }
+
+ .buttonD2 {
+  position: relative;
+  bottom: -2cm;
+  border: none;
+  background: transparent;
+  padding: 1;
+  margin-left: 10px;
+  cursor: pointer;
+  outline-offset: 4px;
+  -webkit-transition: -webkit-filter 250ms;
+  transition: -webkit-filter 250ms;
+  transition: filter 250ms;
+  transition: filter 250ms, -webkit-filter 250ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      
  }
  
  .shadow {
@@ -1097,7 +1136,7 @@ height: 50px;
       #6D6D6D 100%
    );
  }
- 
+
  .front {
   display: block;
   position: relative;
@@ -1128,13 +1167,204 @@ height: 50px;
      600ms
      cubic-bezier(.3, .7, .4, 1);
  }
+ .frontNone {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  background: rgb(255, 255, 255) 100%;
+
+  will-change: transform;
+  -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-transition: -webkit-transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+  transition: -webkit-transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1), -webkit-transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ .front2 {
+   color: white;
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+
+  font-size: 1.1rem;
+  
+  font-weight: bold;
+  background: rgb(174, 0, 255) 100%;
+
+  will-change: transform;
+  -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-transition: -webkit-transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+  transition: -webkit-transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1), -webkit-transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ .front3 {
+  color: white;
+ display: block;
+ position: relative;
+ padding: 12px 27px;
+ border-radius: 12px;
+
+ font-size: 1.1rem;
  
+ font-weight: bold;
+ background: rgb(255, 145, 0) 100%;
+
+ will-change: transform;
+ -webkit-transform: translateY(-4px);
+     -ms-transform: translateY(-4px);
+         transform: translateY(-4px);
+ -webkit-transition: -webkit-transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+ transition: -webkit-transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1), -webkit-transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+.front31 {
+  color: white;
+ display: block;
+ position: relative;
+ padding: 12px 27px;
+ border-radius: 12px;
+
+ font-size: 1.1rem;
+
+ font-weight: bold;
+ background: rgb(255, 145, 0) 100%;
+
+ will-change: transform;
+ -webkit-transform: translateY(-4px);
+     -ms-transform: translateY(-4px);
+         transform: translateY(-4px);
+ -webkit-transition: -webkit-transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+ transition: -webkit-transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1), -webkit-transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.front31:hover {
+  animation: color-change 1s infinite;
+  background-color: #000000;
+
+}
+@keyframes color-change {
+  0% { color: #000000; }
+  25% { color: hsl(176, 100%, 56%); }
+  50% { color: hsl(65, 100%, 56%); }
+  75% { color: hsl(301, 100%, 56%); }
+  100% { color: hsl(351, 100%, 56%); }
+
+}
+
+.front4 {
+  color: white;
+ display: block;
+ position: relative;
+ padding: 12px 27px;
+ border-radius: 12px;
+
+ font-size: 1.1rem;
+ 
+ font-weight: bold;
+ background: rgb(55, 0, 255) 100%;
+
+ will-change: transform;
+ -webkit-transform: translateY(-4px);
+     -ms-transform: translateY(-4px);
+         transform: translateY(-4px);
+ -webkit-transition: -webkit-transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+ transition: -webkit-transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1), -webkit-transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
  .buttonD:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+ }
+ .buttonD2:hover {
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
  }
  
  .buttonD:hover .front {
+  -webkit-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+          transform: translateY(-6px);
+  -webkit-transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5), -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ .buttonD2:hover .front {
   -webkit-transform: translateY(-6px);
       -ms-transform: translateY(-6px);
           transform: translateY(-6px);
@@ -1163,7 +1393,134 @@ height: 50px;
   transition: transform 34ms;
   transition: transform 34ms, -webkit-transform 34ms;
  }
+ .buttonD2:active .front {
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: -webkit-transform 34ms;
+  transition: -webkit-transform 34ms;
+  transition: transform 34ms;
+  transition: transform 34ms, -webkit-transform 34ms;
+ }
  
+ 
+ .buttonD:hover .front2 {
+  -webkit-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+          transform: translateY(-6px);
+  -webkit-transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5), -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .buttonD:active .front2 {
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: -webkit-transform 34ms;
+  transition: -webkit-transform 34ms;
+  transition: transform 34ms;
+  transition: transform 34ms, -webkit-transform 34ms;
+ }
+
+ .buttonD:hover .front3 {
+  -webkit-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+          transform: translateY(-6px);
+  -webkit-transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5), -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .buttonD:active .front3 {
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: -webkit-transform 34ms;
+  transition: -webkit-transform 34ms;
+  transition: transform 34ms;
+  transition: transform 34ms, -webkit-transform 34ms;
+ }
+ .buttonD:hover .front31 {
+  -webkit-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+          transform: translateY(-6px);
+  -webkit-transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5), -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .buttonD:active .front31 {
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: -webkit-transform 34ms;
+  transition: -webkit-transform 34ms;
+  transition: transform 34ms;
+  transition: transform 34ms, -webkit-transform 34ms;
+ }
+ .buttonD:hover .front4 {
+  -webkit-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+          transform: translateY(-6px);
+  -webkit-transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5), -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .buttonD:active .front4 {
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: -webkit-transform 34ms;
+  transition: -webkit-transform 34ms;
+  transition: transform 34ms;
+  transition: transform 34ms, -webkit-transform 34ms;
+ }
  .buttonD:hover .shadow {
   -webkit-transform: translateY(4px);
       -ms-transform: translateY(4px);
@@ -1193,12 +1550,24 @@ height: 50px;
   transition: transform 34ms;
   transition: transform 34ms, -webkit-transform 34ms;
  }
+ .buttonD2:active .shadow {
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-transition: -webkit-transform 34ms;
+  transition: -webkit-transform 34ms;
+  transition: transform 34ms;
+  transition: transform 34ms, -webkit-transform 34ms;
+ }
  
  .buttonD:focus:not(:focus-visible) {
   outline: none;
  }
 
 
+ .buttonD2:focus:not(:focus-visible) {
+  outline: none;
+ }
 
 
 
@@ -1356,6 +1725,7 @@ height: 50px;
   text-transform: uppercase;
   outline: none;
   transition: border-color .2s;
+  text-align: center;
 }
 
 .app-form-control::placeholder {
@@ -1377,6 +1747,21 @@ height: 50px;
   font-family: 'Bitter', serif;
  
 }
+
+.app-form-button2 {
+  background: blue;
+  border: 2px solid black;
+  color: white;
+
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  font-family: 'Bitter', serif;
+  text-align: center;
+ 
+}
+
 
 
 
@@ -1519,9 +1904,20 @@ height: 50px;
  
  }
 
- #gmailL{
+ #faceL{
   padding: 1cm;
    color: #001aff;
+   font-weight: bold;
+ }
+
+ #faceL:hover{
+  font-size:25px;
+  
+ }
+
+ #gmailL{
+  padding: 1cm;
+   color: #ff7300;
    font-weight: bold;
  }
 
@@ -1546,6 +1942,70 @@ height: 50px;
 .footerA{
 text-align: right;
 font-family: 'Bitter', serif;
- color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);
 
+}
+
+
+
+
+.cartC{
+  text-align: right;
+}
+
+.cartC p{
+ font-size: 30px;
+}
+
+
+.cartContainer{
+  
+height: 600px;
+border-bottom: 2px solid black;
+
+ 
+}
+.cartContainer label{
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-right: 0.5cm;
+  
+  
+
+
+   
+  }
+
+  .cartContainer select{
+    font-size: 15px;
+    
+    
+  
+  
+     
+    }
+.cart{
+  font-family: 'Bitter', serif;
+  background-color: #1dffce;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid black;
+
+ 
+ 
+}
+
+.cart h1{
+  text-align: center;
+}
+
+.warN{
+  background-color: #000000;
+  color: white;
+ width: 300px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
 }

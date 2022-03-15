@@ -10,7 +10,6 @@ import React, { useEffect } from 'react';
 
 
 
-import ReactDOM from 'react-dom';
 import { motion, useAnimation,AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -18,14 +17,14 @@ import { useInView } from 'react-intersection-observer';
 
 import logo1 from '../public/images/next.png'
 
-import logo2 from '../public/images/cleve.png'
+
 
 
 import logo3 from '../public/images/Responsive.png'
 
 import logo6 from '../public/images/daddy.png'
 
-import logo4 from '../public/images/moon.svg'
+
 import logo5 from '../public/images/full_moon (1).svg'
 
 
@@ -76,6 +75,8 @@ export default function Home() {
 
 
   return (
+  
+   
 
     
   <div className={styles.indeX}>
@@ -84,13 +85,16 @@ export default function Home() {
 
 <div className={styles.header}>
 
-<AnimatePresence>
+
      <motion.div
      
      
 
 
-
+     initial={{opacity:0, x:'-100vw'}}
+     animate={{opacity:1, x:0,transition:{delay:.1}}}
+     
+     exit={{opacity:0, x:'100vw'}}
 
      
      
@@ -126,11 +130,11 @@ export default function Home() {
 
      
      <div className={styles.moon}>
-     <Image className={styles.moonH} src={logo5} width='100px' height='100px'></Image>
+     <Image className={styles.moonH} src={logo5} width='100px' height='100px' alt='moon'></Image>
      </div>
 
      </motion.div>
-     </AnimatePresence>
+     
 
     
      </div>
@@ -197,13 +201,13 @@ With this technique,websites load faster than other web pages<br/> even when on 
         <div className="each-fade">
           <h1>Your Own Custom Domain</h1>
 
-          <Image src={logo6} width="700px" height='400px'></Image>
+          <Image src={logo6} width="700px" height='400px' alt='goDaddyDomain'></Image>
         </div>
 
         <div className="each-fade">
           <h1>Deployed In Vercel</h1>
           <h5>(Among The Top 10 Web Hosting Services)</h5>
-          <Image src={logo1} width="700px" height='400px'></Image>
+          <Image src={logo1} width="700px" height='400px' alt='responsiveWebDesign'></Image>
         </div>
 
 
@@ -212,7 +216,7 @@ With this technique,websites load faster than other web pages<br/> even when on 
         
         <div className="each-fade">
         <h1>Responsive websites</h1>
-        <Image src={logo3} width="700px" height='400px'></Image>
+        <Image src={logo3} width="700px" height='400px' alt='vercel/nextJS'></Image>
         </div>
         
       </Fade>
@@ -268,5 +272,6 @@ With this technique,websites load faster than other web pages<br/> even when on 
 
 
     </div>
+  
   )
 }

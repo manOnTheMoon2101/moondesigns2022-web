@@ -33,12 +33,26 @@ export default function About(){
 <div className={styles.aboutHeader}>
 
 
+<motion.div
+     
+     
 
+
+     initial={{opacity:0, x:'100vw'}}
+     animate={{opacity:1, x:0,transition:{delay:.1}}}
+     
+     exit={{opacity:0, x:'-100vw'}}
+
+     
+     
+     
+     
+     >
 
 <h1 className={styles.aboutHead}>About Us</h1>
 
 
-
+</motion.div>
 
 
 
