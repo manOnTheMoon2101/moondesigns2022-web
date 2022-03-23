@@ -398,7 +398,7 @@ const portClickM =() =>{
 
     <div className={styles.coupon}>
     
-<p>For any question,please do contact us on our socials our send us a direct meesage through our web page.We will reach out to you in the next 24hrs.</p>
+<p>For any question,please do contact us on our socials our send us a direct message through our web page.We will reach out to you in the next 24hrs.</p>
     </div>
 
     

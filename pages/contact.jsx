@@ -28,10 +28,10 @@ export default function Contact(){
      
 
 
-     initial={{opacity:0, x:'100vw'}}
+     initial={{opacity:0, x:'-100vw'}}
      animate={{opacity:1, x:0,transition:{delay:.1}}}
      
-     exit={{opacity:0, x:'-100vw'}}
+     exit={{opacity:0, x:'100vw'}}
 
      
      

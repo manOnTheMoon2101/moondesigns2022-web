@@ -44,8 +44,9 @@ text-decoration: underline;
  
 .header{
   
+  background-image: url(../public/images/Cloudy\ \(3\).svg);
   
-  background-image: url('../public/images/Cloudy.svg');
+
 
   height: 700px;
   
@@ -62,7 +63,7 @@ text-decoration: underline;
   .header{
   
   
-    background-image: url('../public/images/Cloudy.svg');
+    background-image: url(../public/images/Cloudy\ \(3\).svg);
   
     height: 700px;
     width: 820px;
@@ -245,7 +246,7 @@ text-decoration: underline;
   .header{
   
   
-    background-image: url('../public/images/Cloudy.svg');
+    background-image: url(../public/images/Cloudy\ \(3\).svg);
   
     height: 700px;
     width: 17cm;
@@ -446,7 +447,7 @@ right: 2cm;
   text-align: center;
   font-size: 60px;
   top: 2cm;
-  text-decoration: underline;
+  text-decoration: underline yellow;
 
 
 
@@ -641,7 +642,7 @@ right: 2cm;
 
 
  .aboutP{
-  background-image: url('../public/images/Cloudy.svg');
+  background-image: url(../public/images/Cloudy\ \(3\).svg);
 
  
   height: 700px;
@@ -665,7 +666,7 @@ right: 2cm;
 
 
   color: rgb(0, 0, 0);
-  text-shadow: rgba(194, 255, 0, 1) 6px 2px;
+  text-shadow: yellow 6px 2px;
 
 }
 
@@ -673,7 +674,7 @@ right: 2cm;
   font-family: 'Gloria Hallelujah', cursive;
   text-align: center;
   font-size: 60px;
-  text-decoration: underline;
+  text-decoration: underline yellow;
   
   
 
@@ -787,7 +788,7 @@ right: 2cm;
   font-family: 'Gloria Hallelujah', cursive;
   text-align: center;
   font-size: 60px;
-  text-decoration: underline;
+  text-decoration: underline yellow;
   
 
 
@@ -1144,9 +1145,9 @@ height: 50px;
   border-radius: 12px;
 
   font-size: 1.1rem;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: bold;
-  background: rgba(194, 255, 0, 1) 100%;
+  background: rgba(14, 42, 71, 1) 100%;
 
   will-change: transform;
   -webkit-transform: translateY(-4px);
@@ -1198,7 +1199,7 @@ height: 50px;
      cubic-bezier(.3, .7, .4, 1);
  }
  .front2 {
-   color: white;
+   color: rgb(0, 0, 0);
   display: block;
   position: relative;
   padding: 12px 27px;
@@ -1207,7 +1208,7 @@ height: 50px;
   font-size: 1.1rem;
   
   font-weight: bold;
-  background: rgb(174, 0, 255) 100%;
+  background: yellow 100%;
 
   will-change: transform;
   -webkit-transform: translateY(-4px);
@@ -1229,7 +1230,7 @@ height: 50px;
      cubic-bezier(.3, .7, .4, 1);
  }
  .front3 {
-  color: white;
+  color: rgb(0, 0, 0);
  display: block;
  position: relative;
  padding: 12px 27px;
@@ -1238,7 +1239,7 @@ height: 50px;
  font-size: 1.1rem;
  
  font-weight: bold;
- background: rgb(255, 145, 0) 100%;
+ background: yellow 100%;
 
  will-change: transform;
  -webkit-transform: translateY(-4px);
@@ -1260,7 +1261,7 @@ height: 50px;
     cubic-bezier(.3, .7, .4, 1);
 }
 .front31 {
-  color: white;
+  color: rgb(0, 0, 0);
  display: block;
  position: relative;
  padding: 12px 27px;
@@ -1269,7 +1270,7 @@ height: 50px;
  font-size: 1.1rem;
 
  font-weight: bold;
- background: rgb(255, 145, 0) 100%;
+ background: yellow 100%;
 
  will-change: transform;
  -webkit-transform: translateY(-4px);
@@ -1306,7 +1307,7 @@ height: 50px;
 }
 
 .front4 {
-  color: white;
+  color: rgb(0, 0, 0);
  display: block;
  position: relative;
  padding: 12px 27px;
@@ -1315,7 +1316,7 @@ height: 50px;
  font-size: 1.1rem;
  
  font-weight: bold;
- background: rgb(55, 0, 255) 100%;
+ background: yellow 100%;
 
  will-change: transform;
  -webkit-transform: translateY(-4px);
@@ -1593,7 +1594,7 @@ height: 50px;
 
 
 .form{
-  height: 500px;
+  height: 550px;
   border-bottom: #000000 2px solid;
   text-align: center;
 
@@ -1604,12 +1605,16 @@ height: 50px;
   font-size: 40px;
 }
 
-
+.reach{
+  position: relative;
+  top: 20px;
+}
 
 
 .screen {
   position: relative;
-  background: #ffffff;
+  top: 10px;
+  background: rgba(14, 42, 71, 1);
   border-radius: 15px;
 }
 
@@ -1719,7 +1724,7 @@ height: 50px;
   background: none;
   border: none;
   border-bottom: 1px solid #666;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1729,7 +1734,7 @@ height: 50px;
 }
 
 .app-form-control::placeholder {
-  color: #666;
+  color: yellow;
 }
 
 .app-form-control:focus {
@@ -1889,9 +1894,6 @@ height: 50px;
    font-weight: bold;
  }
 
- #instaL:hover{
-  font-size:25px;
-}
 
  #whatsL{
   padding: 1cm;
@@ -1899,10 +1901,7 @@ height: 50px;
    font-weight: bold;
  }
 
- #whatsL:hover{
-  font-size:25px;
- 
- }
+
 
  #faceL{
   padding: 1cm;
@@ -1910,10 +1909,7 @@ height: 50px;
    font-weight: bold;
  }
 
- #faceL:hover{
-  font-size:25px;
-  
- }
+
 
  #gmailL{
   padding: 1cm;
@@ -1921,10 +1917,6 @@ height: 50px;
    font-weight: bold;
  }
 
- #gmailL:hover{
-  font-size:25px;
-  
- }
  .socialBox ul{
    list-style: none;
    
@@ -1969,7 +1961,7 @@ border-bottom: 2px solid black;
   position: relative;
   font-size: 20px;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: underline black;
   padding-right: 0.5cm;
   
   
@@ -1988,10 +1980,11 @@ border-bottom: 2px solid black;
     }
 .cart{
   font-family: 'Bitter', serif;
-  background-color: #1dffce;
+  background-color: rgba(14, 42, 71, 1);
   margin-left: 10px;
   margin-right: 10px;
   border: 2px solid black;
+  color: white;
 
  
  
@@ -2002,7 +1995,8 @@ border-bottom: 2px solid black;
 }
 
 .warN{
-  background-color: #000000;
+  text-shadow: black 1px 1px;
+  text-decoration: underline red;
   color: white;
  width: 300px;
   text-align: center;

@@ -61,13 +61,16 @@ function MyApp({ Component, pageProps }) {
   <AnimatePresence>
 
 <Head>
-        <title>Moon Designs</title>
-        <meta name="description" content="Web Designs based in Wellington,NextJS,Responsive Webdesign,South Africa,Remote" />
+        <title>Moon Designs-Web Designing</title>
 
-<meta name='robots' content='noindex,nofollow'></meta>
+        <meta name="description" content="Moon Designs focuses on providing clients with high-end WebPages powered by NextJS." />
+        <meta name="keywords" content="Web-Design,NextJS,Responsive,GoDaddy,Vercel,Animations"></meta>
 
 
-        <link rel="icon" href="/moon_icon.ico" />
+        <meta name='robots' content='noindex,nofollow'></meta>
+        <meta name='author' content='Cleve Clayton'></meta>
+
+        <link rel="icon" href="/moon_icon.png" />
 
 
 
@@ -158,10 +161,10 @@ function MyApp({ Component, pageProps }) {
 
 <div className={styles.socialBox}>
 
-  <a id={styles.instaL} href="https://www.instagram.com/moon_designs2022/" target="_blank" rel="noopener noreferrer"><BsInstagram/></a>
-  <a id={styles.whatsL}href='https://api.whatsapp.com/send?phone=27746957353&text=Hey,I%20would%20like%20to%20place%20a%20order?' target="_blank" rel="noopener noreferrer"><BsWhatsapp/></a>
-  <a id={styles.gmailL} href='mailto:moondesigns2022@gmail.com' target="_blank" rel="noopener noreferrer"><AiOutlineMail/></a>
-  <a id={styles.faceL} href='https://www.facebook.com/moonDesigns2022' target="_blank" rel="noopener noreferrer"><BsFacebook/></a>
+  <a id={styles.instaL} href="https://www.instagram.com/moon_designs2022/" target="_blank" rel="noopener noreferrer" title='Instagram'><BsInstagram/></a>
+  <a id={styles.whatsL}href='https://api.whatsapp.com/send?phone=27746957353&text=Hey,I%20would%20like%20to%20place%20a%20order?' target="_blank" rel="noopener noreferrer" title='Whatsapp'><BsWhatsapp/></a>
+  <a id={styles.gmailL} href='mailto:moondesigns2022@gmail.com' target="_blank" rel="noopener noreferrer" title='Email'><AiOutlineMail/></a>
+  <a id={styles.faceL} href='https://www.facebook.com/moonDesigns2022' target="_blank" rel="noopener noreferrer" title='FaceBook Page'><BsFacebook/></a>
 </div>
 
 

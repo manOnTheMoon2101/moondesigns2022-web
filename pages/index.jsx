@@ -159,7 +159,7 @@ With this technique,websites load faster than other web pages<br/> even when on 
 </p>
 
 <h1 className={styles.paraHead}>NextJS Websites</h1>
-<p><a className={styles.showL} href="https://nextjs.org/showcase" target="_blank" rel="noopener noreferrer">Here</a> are a list off popular websites using <span>{next}</span>.
+<p><a className={styles.showL} href="https://nextjs.org/showcase" target="_blank" rel="noopener noreferrer" title='NextJS Websites'>Here</a> are a list off popular websites using <span>{next}</span>.
 </p>
 
 
@@ -201,13 +201,13 @@ With this technique,websites load faster than other web pages<br/> even when on 
         <div className="each-fade">
           <h1>Your Own Custom Domain</h1>
 
-          <Image src={logo6} width="700px" height='400px' alt='goDaddyDomain'></Image>
+          <Image src={logo6} width="700px" height='400px' alt='we buy our domain at GoDaddyDomain.'></Image>
         </div>
 
         <div className="each-fade">
           <h1>Deployed In Vercel</h1>
           <h5>(Among The Top 10 Web Hosting Services)</h5>
-          <Image src={logo1} width="700px" height='400px' alt='responsiveWebDesign'></Image>
+          <Image src={logo1} width="700px" height='400px' alt='we make sure your website is responsive and accessible on every device.'></Image>
         </div>
 
 
@@ -216,7 +216,7 @@ With this technique,websites load faster than other web pages<br/> even when on 
         
         <div className="each-fade">
         <h1>Responsive websites</h1>
-        <Image src={logo3} width="700px" height='400px' alt='vercel/nextJS'></Image>
+        <Image src={logo3} width="700px" height='400px' alt='your website is deployed to vercel.'></Image>
         </div>
         
       </Fade>
@@ -241,9 +241,9 @@ With this technique,websites load faster than other web pages<br/> even when on 
 
 
 
-<h1>Start chosing from our varias options for<br/> your Perfect Website</h1>
+<h1>Checkout our Service Page and <br/>choose the best options <br/>for your Website.</h1>
 
-<h5>Check out our service page</h5>
+<h5>Dont' miss our monthly sale discount code posted on our socials!</h5>
 
 
 
