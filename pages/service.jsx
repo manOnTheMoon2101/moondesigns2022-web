@@ -37,7 +37,7 @@ export default function Service(){
 
 
   const domainClickP =() =>{
-  setNum(+300);
+  setNum(+100);
 }
 
 function cartDomain(){
@@ -74,7 +74,7 @@ const domainClickM =() =>{
 
 
 const AniClickP =() =>{
-  setNumA(+200);
+  setNumA(+50);
 }
 const AniClickM =() =>{
   setNumA(0);
@@ -83,24 +83,24 @@ const AniClickM =() =>{
 
 
 const StyleClickP =() =>{
-  setNumS(+100);
+  setNumS(+0);
 }
 const StyleClickM =() =>{
-  setNumS(+300);
+  setNumS(+50);
 }
 
 
 
 const pageClickP =() =>{
-  setNumP(+200);
+  setNumP(+50);
 }
 const pageClickM =() =>{
-  setNumP(+400);
+  setNumP(+100);
 }
 
 
 const lifeClickP =() =>{
-  setNumL(+300);
+  setNumL(+50);
 }
 const lifeClickM =() =>{
   setNumL(0);
@@ -108,7 +108,7 @@ const lifeClickM =() =>{
 
 
 const portClickP =() =>{
-  setNumB(+200);
+  setNumB(+50);
 }
 const portClickM =() =>{
   setNumB(+100);
@@ -165,7 +165,7 @@ const portClickM =() =>{
 
 
     <div className={styles.domainService}>
-      <h1>Do you want your own Domain?</h1>
+      <h1>We offer various Domain Options</h1>
      
       <div className={styles.domainList}>
       
@@ -225,7 +225,7 @@ const portClickM =() =>{
  
 
   <div className={styles.animationsService}>
-      <h1>Do you want any Animations?</h1>
+      <h1>Animations to stand out</h1>
       
         
       
@@ -266,7 +266,7 @@ const portClickM =() =>{
 
 
   <div className={styles.stylingService}>
-      <h1>Do You Want Styling?</h1>
+      <h1>Styling with diffrent unique fonts</h1>
       
       
       <h6 className={styles.noStyle}>qué tengas un lindo día</h6>
@@ -289,7 +289,7 @@ const portClickM =() =>{
     <button className={styles.buttonD} onClick={StyleClickM}>
     <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
-  <span class={styles.front2}>Mid Styling</span>
+  <span class={styles.front2}>Styling</span>
 
 
     </button>
@@ -405,7 +405,7 @@ const portClickM =() =>{
 <button className={styles.buttonD}>
   <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
-  <span class={styles.front}><Link href='/contact'>Contact Form</Link></span>
+  <span class={styles.front}><Link href='/contact'>Contact Us</Link></span>
   </button>
 
   </div>
@@ -436,7 +436,7 @@ const portClickM =() =>{
   <label>Animations:</label>
 <select name='Animations'>
   <option value='NoAnimations'>No Animations</option>
-  <option value='YesAnimations'>Anamations Indeed</option>
+  <option value='YesAnimations'>Yes</option>
   
   
   
@@ -447,7 +447,7 @@ const portClickM =() =>{
   <label>Styling:</label>
 <select name='Styling'>
   <option value='NoStyling'>No Styling</option>
-  <option value='YesStyling'>Styling Indeed</option>
+  <option value='YesStyling'>Yes</option>
   
   
   
@@ -468,14 +468,14 @@ const portClickM =() =>{
     <label>Updates:</label>
 <select name='Updates'>
   <option value='NoUpadtes'>No Updates</option>
-  <option value='YesUpadtes'>Updates Indeed</option>
+  <option value='YesUpadtes'>Yes</option>
   
   
   
   </select>
     <br/>
 
-    <label>Portfolio?Business:</label>
+    <label>Portfolio/Business:</label>
 <select name='P/B'>
   <option value='Portfolio'>Portfolio</option>
   <option value='Business'>Business</option>
@@ -487,7 +487,7 @@ const portClickM =() =>{
 
     <p className={styles.warN}>Note:Please asure that everything in your cart is right and you entered your correct email address. 
     <br/>
-    We will contact you back regarding payments and more inforamtion about your web page.
+    We will contact you back regarding payments and more information about your web page.
     
      </p>
 
