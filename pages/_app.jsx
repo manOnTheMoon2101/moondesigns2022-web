@@ -7,6 +7,11 @@ import {BsInstagram} from 'react-icons/bs';
 import {AiOutlineMail} from 'react-icons/ai';
 import {BsFacebook} from 'react-icons/bs';
 import {BsWhatsapp} from 'react-icons/bs';
+import {AiTwotonePhone} from 'react-icons/ai';
+import {AiTwotoneTool} from 'react-icons/ai';
+import {RiPagesFill} from 'react-icons/ri';
+import {AiTwotoneHome} from 'react-icons/ai';
+import {HiInformationCircle} from 'react-icons/hi';
 
 import { useRouter } from 'next/router'
 import { GTM_ID, pageview } from '../lib/ga/gtm'
@@ -70,7 +75,7 @@ function MyApp({ Component, pageProps }) {
         <meta name='robots' content='noindex,nofollow'></meta>
         <meta name='author' content='Cleve Clayton'></meta>
 
-        <link rel="icon" href="/moon_icon.png" />
+        <link rel="icon" href="/moon.svg" />
 
 
 
@@ -98,13 +103,16 @@ function MyApp({ Component, pageProps }) {
         
        
      <ul>
-     <li><Link href='/'>Home</Link></li>
-       <li><Link href='/about'>About</Link></li>
-       <li><Link href='/service'>Service</Link></li>
+     <li><Link href='/'><AiTwotoneHome title='Home'/></Link></li>
+       <li><Link href='/about'><HiInformationCircle title='About'/></Link></li>
+       <li><Link href='/projects'><RiPagesFill title='Projects'/></Link></li>
+       <li><Link href='/service'><AiTwotoneTool title='Services'/></Link></li>
        
-       <li><Link href='/contact'>Contact</Link></li>
+       <li><Link href='/contact'><AiTwotonePhone title='Contact'/></Link></li>
+       
       
      </ul>
+   
      </div>
     
     

@@ -33,41 +33,33 @@ export default function About(){
 <div className={styles.aboutHeader}>
 
 
-<motion.div
-     
-     
 
 
-     initial={{opacity:0, x:'-100vw'}}
-     animate={{opacity:1, x:0,transition:{delay:.1}}}
-     
-     exit={{opacity:0, x:'100vw'}}
-
-     
-     
-     
-     
-     >
-
-<h1 className={styles.aboutHead}>About Us</h1>
+<h1 className={styles.headH}>
 
 
-</motion.div>
+Moon Designs
+
+</h1>
 
 
 
-<div className={styles.moon}>
-     <Image className={styles.moonH} src={logo5} width='100px' height='100px'></Image>
-     </div>
+
+
+
+
 
 
 
 
 </div>
 
+<div className={styles.moon}>
+     <Image className={styles.moonH} src={logo5} width='150px' height='150px' alt='moon'></Image>
+     </div>
 
 
-
+  
     
 </div>
 
@@ -76,7 +68,16 @@ export default function About(){
 
 <div className={styles.aboutMain}>
 
-<h1 className={styles.aboutHead2}>Team Moon</h1>
+<h1 className={styles.aboutHead2}>
+
+Moon Designs is a FreeLancing Businnes run by <a href='https://www.cleveclayton.com/'>Cleve Clayton</a>. 
+I make websites using the NextJs Framework.
+Whether it is for Business purposes or Portfolio,<br/>I provide.
+
+
+
+  
+</h1>
 
 
 
@@ -85,8 +86,7 @@ export default function About(){
 
 
 <h2 className={styles.aboutPa}>
-is currently established in 
-Wellington,<br/>we provided our clients with high end quality work<br/> and we always put heart and soul<br/> to our projects.
+
 
 
 

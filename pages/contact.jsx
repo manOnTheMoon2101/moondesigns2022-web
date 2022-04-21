@@ -1,10 +1,9 @@
 
-import Head from 'next/head'
+
 
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Link from 'next/link';
-import { Fade } from "react-slideshow-image";
+
 import "react-slideshow-image/dist/styles.css";
 import logo5 from '../public/images/full_moon (1).svg'
 
@@ -38,20 +37,24 @@ export default function Contact(){
      
      
      >
+  <h1 className={styles.headH}>
 
-<h1 className={styles.serviceHeader}>Contact</h1>
+
+Moon Designs
+
+</h1>
+
 
 </motion.div>
 
-    <div className={styles.moon}>
-     <Image className={styles.moonH} src={logo5} width='100px' height='100px'></Image>
-     </div>
 </div>
 
 
 
 
-
+<div className={styles.moon}>
+     <Image className={styles.moonH} src={logo5} width='150px' height='150px' alt='moon'></Image>
+     </div>
 
 
     </div>
@@ -78,17 +81,17 @@ export default function Contact(){
         <div class={styles['screen-body-item']}>
           <div class={styles['app-form']}>
             <div class={styles['app-form-group']}>
-              <input class={styles['app-form-control']} type="text" name='Name' placeholder="Full Name(required)" required/>
+              <input class={styles['app-form-control1']} type="text" name='Name' placeholder="Full Name(required)" required/>
             </div>
             <div class={styles['app-form-group']}>
-              <input class={styles['app-form-control']} type="text" name='Email' placeholder="Email(required)" required/>
+              <input class={styles['app-form-control1']} type="text" name='Email' placeholder="Email(required)" required/>
             </div>
             <div class={styles['app-form-group']}>
-              <input class={styles['app-form-control']} type="number" name='ContactNumber' placeholder="Phone Number (not required)"/>
+              <input class={styles['app-form-control1']} type="number" name='ContactNumber' placeholder="Phone Number (not required)"/>
             </div>
             
             <div class="app-form-group message">
-              <input class={styles['app-form-control']} type="text" name='Message' placeholder="Message" required/>
+              <input class={styles['app-form-control1']} type="text" name='Message' placeholder="Message" required/>
             </div>
 
             <div class={styles['app-form-group-buttons']}>

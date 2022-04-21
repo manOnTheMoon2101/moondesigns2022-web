@@ -149,13 +149,18 @@ const portClickM =() =>{
      
      >
       
-        <h1 className={styles.serviceHeader}>Services</h1>
+      <h1 className={styles.headH}>
+
+
+Moon Designs
+
+</h1>
 
         </motion.div>
 
         
         <div className={styles.moon}>
-     <Image className={styles.moonH} src={logo5} width='100px' height='100px'></Image>
+     <Image className={styles.moonH} src={logo5} width='150px' height='150px' alt='moon'></Image>
      </div>
 
 
@@ -277,7 +282,7 @@ const portClickM =() =>{
       <h6 className={styles.allStyle}>qué tengas un lindo día</h6>
      
 
-      <h5 className={styles.numVar}>+R{numS}</h5>
+      <h5 className={styles.numVar}>+ZAR {numS}</h5>
       
     <button  onClick={StyleClickP}>
   
@@ -305,7 +310,7 @@ const portClickM =() =>{
 
      
 
-      <h5 className={styles.numVar}>+R{numP}</h5>
+      <h5 className={styles.numVar}>+ZAR {numP}</h5>
       
     <button className={styles.buttonD} onClick={pageClickP}>
     <span class={styles.shadow}></span>
@@ -341,7 +346,7 @@ const portClickM =() =>{
   <div className={styles.lifeService}>
       <h1>Life Time Updates</h1>
       <h2>We provided free future updates on <br/>your website</h2>
-      <h5 className={styles.numVar}>+R{numL}</h5>
+      <h5 className={styles.numVar}>+ZAR {numL}</h5>
       
     <button className={styles.buttonD} onClick={lifeClickM}>
 
@@ -367,9 +372,9 @@ const portClickM =() =>{
       <h2>Attract Empolyers <br/>or <br/>
       Attract Customers</h2>
       
-      <h5 className={styles.numVar}>+R{numB}</h5>
+      <h5 className={styles.numVar}>+ZAR {numB}</h5>
       
-    <button className={styles.buttonD} onClick={portClickM}>
+    <button className={styles.buttonD} onClick={portClickP}>
 
     <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
@@ -377,7 +382,7 @@ const portClickM =() =>{
 
 
     </button>
-    <button className={styles.buttonD} onClick={portClickP}>
+    <button className={styles.buttonD} onClick={portClickM}>
 
     <span class={styles.shadow}></span>
   <span class={styles.edge}></span>
@@ -394,11 +399,11 @@ const portClickM =() =>{
 
 
   <div className={styles.priCe}>
-    <h1>Your total will be:<span className={styles.sumNum}>R{numSum}</span></h1>
+    <h1>Your total will be:<span className={styles.sumNum}>ZAR {numSum}</span></h1>
 
     <div className={styles.coupon}>
     
-<p>For any question,please do contact us on our socials our send us a direct message through our web page.We will reach out to you in the next 24hrs.</p>
+<p>For any question,please do contact us on our socials our send us a direct message.We will reach out to you in the next 24hrs.</p>
     </div>
 
     

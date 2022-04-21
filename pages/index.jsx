@@ -1,7 +1,7 @@
 
 
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -101,7 +101,12 @@ export default function Home() {
      
      
      >
-     <h1 className={styles.headH}>MOON Designs</h1>
+     <h1 className={styles.headH}>
+
+
+     Moon Designs
+
+     </h1>
     
 
 
@@ -130,12 +135,13 @@ export default function Home() {
 
      
      <div className={styles.moon}>
-     <Image className={styles.moonH} src={logo5} width='100px' height='100px' alt='moon'></Image>
+     <Image className={styles.moonH} src={logo5} width='150px' height='150px' alt='moon'></Image>
      </div>
 
      </motion.div>
      
-
+    
+  
     
      </div>
 
@@ -152,10 +158,11 @@ export default function Home() {
 <p>We use the <span>{next}</span> Framework to build our websites.
 
 </p>
+<iframe className={styles.youT} width="560" height="315" src="https://www.youtube.com/embed/lRQ5z7i7pxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h1 className={styles.paraHead}>What is NextJS?</h1>
 <p><span>{next}</span> is a React Framework which enables SSR(server side rendering)<br/> for your website.
-With this technique,websites load faster than other web pages<br/> even when on low internet speed.
+With this technique,websites load faster than other web pages<br/> even when users are on low internet speed.
 </p>
 
 <h1 className={styles.paraHead}>NextJS Websites</h1>
@@ -165,7 +172,7 @@ With this technique,websites load faster than other web pages<br/> even when on 
 
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lRQ5z7i7pxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 </div>
 
 
@@ -216,6 +223,7 @@ With this technique,websites load faster than other web pages<br/> even when on 
         
         <div className="each-fade">
         <h1>Responsive websites</h1>
+        <h5>(Accesible on Phones,Tablets,Laptops etc.)</h5>
         <Image src={logo3} width="700px" height='400px' alt='your website is deployed to vercel.'></Image>
         </div>
         
