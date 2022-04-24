@@ -158,7 +158,7 @@ export default function Home() {
 <p>We use the <span>{next}</span> Framework to build our websites.
 
 </p>
-<iframe className={styles.youT} width="560" height="315" src="https://www.youtube.com/embed/lRQ5z7i7pxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  className={styles.youT} width="560" height="315" alt="NextJS Youtube Video" src="https://www.youtube.com/embed/lRQ5z7i7pxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h1 className={styles.paraHead}>What is NextJS?</h1>
 <p><span>{next}</span> is a React Framework which enables SSR(server side rendering)<br/> for your website.
@@ -238,7 +238,12 @@ With this technique,websites load faster than other web pages<br/> even when use
 
 </div>
 
+<div className={styles.perF}>
 
+
+
+  
+</div>
 
     
 

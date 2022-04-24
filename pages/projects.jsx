@@ -57,8 +57,9 @@ Moon Designs
 <div className={styles.projectA}>
 
 <h1>Our Projects</h1>
-
-<Image src={logo10} width='600px' height='500px'></Image>
+<a href='https://www.cleveclayton.com/' target="_blank" rel="noopener noreferrer">
+<Image src={logo10} width='600px' height='500px' alt='Cleve Clayton Website'></Image>
+</a>
 <a href="https://www.cleveclayton.com/" target="_blank" rel="noopener noreferrer">cleveclayton.com</a>
 
 </div>

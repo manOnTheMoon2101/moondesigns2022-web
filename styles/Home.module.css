@@ -544,7 +544,9 @@ text-align: center;
  
  
  
- 
+ .perF{
+   height: 500px;
+ }
  
  
  
@@ -2052,4 +2054,13 @@ text-align: center;
    text-align: center;
    font-size: 15px;
    font-weight: bold;
+ }
+
+
+ .erroR{
+   height: 300px;
+ }
+
+ .erroR h1{
+   text-align: center;
  }
