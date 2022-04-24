@@ -67,6 +67,7 @@ background-image: url(../public/images/Cloudy.svg);
  @media screen and (max-width:850px) and (min-width:700px) {
  
  
+ 
    .header{
    
    
@@ -114,7 +115,20 @@ background-image: url(../public/images/Cloudy.svg);
      background-color: rgb(255, 255, 255);
      border-bottom: 2px black solid;
    }
+   .perF{
+    height: 1000px;
+    width: 820px;
+  }
+  
+  .perF h2{
+   font-family: 'Gloria Hallelujah', cursive;
+ }
  
+ .perfR{
+   text-align: center;
+ }
+  
+  
    .aboutP{
     background-image: url(../public/images/Cloudy.svg);
    width: 820px;
@@ -250,7 +264,16 @@ background-image: url(../public/images/Cloudy.svg);
  
  
  @media screen and (max-width:450px) and (min-width:280px) {
- 
+  .navB li{
+    display: inline;
+    list-style: none;
+    font-size: 30px;
+    margin: 0;
+    padding: 0.5cm;
+    color: rgba(19, 15, 57, 1);
+   
+   
+   }
    .header{
    
    
@@ -289,7 +312,8 @@ background-image: url(../public/images/Cloudy.svg);
      border-bottom: 2px black solid;
      
    }
- 
+  
+  
    .project{
      position: relative;
      width: 17cm;
@@ -299,6 +323,20 @@ background-image: url(../public/images/Cloudy.svg);
      background-color: rgb(255, 255, 255);
      border-bottom: 2px black solid;
    }
+   .perF{
+    height: 800px;
+    width: 17cm;
+  }
+  
+  .perF h2{
+   font-family: 'Gloria Hallelujah', cursive;
+ }
+ 
+ .perfR{
+   position: relative;
+   bottom: -3cm;
+   text-align: center;
+  }
  
    .aboutP{
     background-image: url(../public/images/Cloudy.svg);
@@ -545,11 +583,17 @@ text-align: center;
  
  
  .perF{
-   height: 500px;
+   height: 1000px;
  }
  
- 
- 
+ .perF h2{
+
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.perfR{
+  text-align: right;
+}
  
  
  

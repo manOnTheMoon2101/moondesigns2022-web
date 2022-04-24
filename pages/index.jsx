@@ -27,6 +27,10 @@ import logo6 from '../public/images/daddy.png'
 
 import logo5 from '../public/images/full_moon (1).svg'
 
+import logo7 from '../public/images/performance.png'
+
+import logo8 from '../public/images/perf2.png'
+
 
 export default function Home() {
    
@@ -240,12 +244,20 @@ With this technique,websites load faster than other web pages<br/> even when use
 
 <div className={styles.perF}>
 
+<h2>It's all about P-E-R-F-O-R-M-A-N-C-E!</h2>
 
 
-  
+<Image src={logo7} height='400px' width='1300px'></Image>
+
+
+
+
+<div className={styles.perfR}>
+<h2>Experience the Power of Smoothness in your Web Page.</h2>
+<Image src={logo8} height='400px' width='600px'></Image>
 </div>
 
-    
+</div>
 
 <div className={styles.project}>
 
