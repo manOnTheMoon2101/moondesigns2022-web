@@ -267,7 +267,7 @@ background-image: url(../public/images/Cloudy.svg);
   .navB li{
     display: inline;
     list-style: none;
-    font-size: 30px;
+    
     margin: 0;
     padding: 0.5cm;
     color: rgba(19, 15, 57, 1);
